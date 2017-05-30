@@ -13,7 +13,11 @@ The rpart() function to build first decision tree. The function takes multiple a
     4. Visualize my_tree_two with plot() and text().
     5. Load the R packages rattle, rpart.plot, and RColorBrewer.
     6. Use fancyRpartPlot(my_tree) to create a much fancier visualization of your tree.
-    
+
+# Import library
+library(rpart.plot)
+library(RColorBrewer)
+
 # Build the decision tree
 my_tree_two <- rpart(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked, data = train, method = "class")
 
